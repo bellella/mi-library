@@ -6,7 +6,8 @@
     "build": "yarn lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint",
-    "roll": "rollup -c"
+    "roll": "rollup -c",
+    "publish": "lerna publish --contents build"
   },
   "author": "",
   "license": "MIT",
