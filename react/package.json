@@ -1,0 +1,20 @@
+{
+  "name": "@mi/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "build": "yarn clean & tsc -p tsconfig.json --declarationDir build & rollup -c rollup.config.js",
+    "clean": "rimraf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^18.2.0"
+  },
+  "type": "module"
+}
