@@ -1,20 +1,30 @@
 {
-  "name": "@mi/react",
+  "name": "@milibrary/react",
   "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
-  "files": [
-    "build/"
-  ],
+  "export": {
+    ".": {
+      "require": "./build/index.js",
+      "import": "./build/index.mjs"
+    }
+  },
   "scripts": {
-    "build": "yarn clean & tsc -p tsconfig.json --declarationDir build & rollup -c rollup.config.js",
+    "build": "yarn clean & tsc --declaration --emitDeclarationOnly & rollup -c",
+    "testt": "tsc --outDir dist/lib --declarationDir dist/types --declaration true && rollup -c",
+    "tsc": "tsc -b",
     "clean": "rimraf build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1 tsc -p tsconfig.json --declarationDir build "
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "react": "^18.2.0"
   },
-  "type": "module"
+  "peerDependencies": {
+    "react": "^16.8 || ^17 || ^18"
+  },
+  "private": false,
+  "type": "module",
+  "gitHead": "f3cea5816476eb1769114c81cca8238b78fd932a"
 }

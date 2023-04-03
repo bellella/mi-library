@@ -1,5 +1,5 @@
 import React, { Children, cloneElement, DetailedReactHTMLElement, useContext, useEffect } from 'react';
-import { AnimateInterface } from '@mi/core'
+import { AnimateInterface } from '@milibrary/core'
 import { AnimationContext } from './AnimationObserver';
 
 interface AnimationTargetInterface extends React.PropsWithChildren {

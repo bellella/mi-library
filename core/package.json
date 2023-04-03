@@ -1,13 +1,17 @@
 {
-  "name": "@mi/core",
+  "name": "@milibrary/core",
   "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
-  "files": [
-    "build/"
-  ],
+  "module": "build/index.mjs",
+  "export": {
+    ".": {
+      "require": "./build/index.js",
+      "import": "./build/index.mjs"
+    }
+  },
   "scripts": {
-    "build": "yarn clean & tsc -p --declarationDir dist & rollup -c rollup.config.js",
+    "build": "yarn clean & tsc --declaration --emitDeclarationOnly & rollup -c",
     "testt": "tsc --outDir dist/lib --declarationDir dist/types --declaration true && rollup -c",
     "tsc": "tsc -b",
     "clean": "rimraf build",
@@ -15,5 +19,6 @@
   },
   "author": "",
   "license": "ISC",
+  "gitHead": "f3cea5816476eb1769114c81cca8238b78fd932a",
   "type": "module"
 }

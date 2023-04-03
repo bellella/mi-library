@@ -1,5 +1,5 @@
 {
-  "name": "mi-library",
+  "name": "milibrary",
   "version": "1.0.0",
   "description": "Mina's First Library",
   "scripts": {
@@ -9,7 +9,7 @@
     "roll": "rollup -c",
     "publish": "lerna publish --contents build"
   },
-  "author": "",
+  "author": "mina choi",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.4",
@@ -25,14 +25,15 @@
     "lerna": "^6.6.1",
     "react": "^18.2.0",
     "rollup": "^3.20.2",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.3",
     "yarn": "^1.22.19"
   },
-  "private": true,
   "workspaces": [
     "core",
     "react"
   ],
-  "type": "module"
+  "type": "module",
+  "private": true
 }

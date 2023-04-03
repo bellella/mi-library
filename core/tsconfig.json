@@ -15,14 +15,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noImplicitAny": true,
-    "declaration": true,
-    //"noEmit": true,
-    //"emitDeclarationOnly": true
+    "noImplicitAny": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": [
-    "*.config.js", // config파일들을 type생성 대상에서 제외
+    "*.config.js",
     "packages/**/node_modules/*.d.ts",
     "node_modules/*.d.ts",
     "**/build/**/*"
