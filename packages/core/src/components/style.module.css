@@ -1,0 +1,11 @@
+.mi-overlay {
+  width: 100vw;
+  height: 100vh;
+  background: hwb(0deg 0% 100% / 70%);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.mi-container {
+  z-index: 101;
+}

@@ -1,0 +1,27 @@
+.mi-modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.mi-modal-container.present {
+  visibility: visible;
+}
+.mi-modal-body {
+  position: relative;
+  z-index: 101;
+}
+.mi-modal-body-default {
+  position: relative;
+  background: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  height: clamp(100px, 600px, 80%);
+  border-radius: 8px;
+  z-index: 101;
+}

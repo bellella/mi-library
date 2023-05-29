@@ -25,5 +25,6 @@ module.exports = {
     'react/display-name': 'off',
     'react/prop-types': 'off',
     'no-var': 'off',
+    'import/no-webpack-loader-syntax': 'off'
   },
 };

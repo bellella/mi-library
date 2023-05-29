@@ -1,0 +1,28 @@
+.mi-loading-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.mi-loading-container.present {
+  display: flex;
+}
+
+.mi-loading-loader-default {
+  height: 3rem;
+  width: 3rem;
+  border: 3px solid #b2b2b2;
+  border-right-color: #00BCD4;
+  border-radius: 100%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}

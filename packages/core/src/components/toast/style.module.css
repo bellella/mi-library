@@ -1,0 +1,26 @@
+.mi-toast-container {
+  display: none;
+  position: fixed;
+}
+
+.mi-toast-container-default {
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 500px;
+  padding: 1rem;
+  margin-left: unset;
+  margin-right: unset;
+  margin-inline: auto;
+  background: #202020;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.mi-toast-container.present {
+  display: block;
+}
+
+.mi-toast-text {
+  margin: 0;
+}

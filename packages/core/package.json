@@ -1,0 +1,26 @@
+{
+  "name": "@milibrary/core",
+  "version": "0.0.8",
+  "description": "",
+  "main": "build/index.js",
+  "export": {
+    ".": {
+      "require": "./build/index.cjs",
+      "import": "./build/index.js"
+    }
+  },
+  "scripts": {
+    "build": "yarn clean & tsc --declaration --emitDeclarationOnly & rollup -c",
+    "testt": "tsc --outDir dist/lib --declarationDir dist/types --declaration true && rollup -c",
+    "tsc": "tsc -b",
+    "clean": "rimraf build",
+    "test": "echo \"Error: no test specified\" && exit 1 tsc -p tsconfig.json --declarationDir build "
+  },
+  "devDependencies": {
+    "rollup-plugin-import-css": "^3.2.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "gitHead": "648cc63dbf409d05294d5f0f901892d1f241d587",
+  "type": "module"
+}
